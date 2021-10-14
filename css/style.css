@@ -4,10 +4,7 @@
 
 
 .borg-consulting-slides {display: none;}
-
-.active {
-  background-color: #717171;
-}
+.placeholder-slides {display: none;}
 
 /* Fading animation */
 .fade {
@@ -80,7 +77,15 @@
     margin-top: 100px;
     margin-left: 15%;
 }
-
+@media only screen and (max-width: 600px) {
+    .hero-container {
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        margin-top: 100px;
+        justify-content: center;
+    }
+}
 .greeting{
     display: block;
     color: rgb(2, 212, 99) !important;
@@ -150,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* about me */
 
-.about {
+.aboutme-section {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -161,12 +166,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .aboutme{
     display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
     max-width: 1400px;
     padding-left: 4%;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .aboutme-container{
@@ -216,4 +219,57 @@ body::-webkit-scrollbar-thumb:hover {
     color: rgb(2, 212, 99);
     width: 15px;
     height: 15px;
+}
+
+/* Pojects */
+
+.project-section{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(17, 17, 17);
+    padding: 100px 0px;
+}
+
+.projects{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1400px;
+}
+
+.projects-anchor{
+    font-size: 36px;
+    font-family: "JetBrains Mono";
+    text-shadow: black 0px 0px 10px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:white;
+}
+.projects ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 20px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.project-links{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 10px;
+    font-family: "JetBrains Mono";
+    color: rgb(189, 189, 189);
+    max-width: 285px;
 }

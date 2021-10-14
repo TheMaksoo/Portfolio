@@ -31,7 +31,7 @@
         </div>
     </section>
      <main>
-        <section class="about">
+        <section class="aboutme-section">
             <div class="aboutme">
                 <div class="aboutme-container">
                     <a id="aboutme" class="aboutme-anchor">About Me</a>
@@ -46,46 +46,87 @@
                         <li><i class="fa fa-code"></i><span>Visual Studio</span></li> 
                     </ul>
                 </div>
+                <img src="img/Maxprofile.jpg" style="width:350; height: 350px; border-radius: 5%;".jpg>
             </div>
         </section>
-        <div class="projects">
-            <a id="projects" class="projects-anchor">Projects</a>
-            <ul>
-                <li>
-                    <div class="slideshow-container">
-                        <div class="borg-consulting-slides fade">
-                            <img src="img/borg-consulting1.jpg" style="width:100px; height: 100px;">
-                        </div>
+        <section class="project-section">
+            <div class="projects">
+                <a id="projects" class="projects-anchor">Projects</a>
+                <ul>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="borg-consulting-slides fade">
+                                <img src="img/borg-consulting1.jpg" style="width:285px; height: 160px;">
+                            </div>
 
-                        <div class="borg-consulting-slides fade">
-                            <img src="img/borg-consulting2.jpg" style="width:100px; height: 100px;">
+                            <div class="borg-consulting-slides fade">
+                                <img src="img/borg-consulting2.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Moheax/borg-consulting"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Borg Consulting</p>
+                            </div>
                         </div>
-                    </div>
-                    <p><i class="fab fa-github"></i><i class="fa fa-link"></i>Borg Consulting</p>
-                </li>
-            </ul>
-        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="placeholder-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="placeholder-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div>
+        </section>
         <div class="experience">
             <a id="experience" class="experience-anchor">Experience</a>
         </div>
         <div class="contact">
             <a id="contact" class="contact-anchor">Contact</a>
         </div>
+        
     </main>
     <script>
-        var slideIndex = 0;
-        showSlides();
+        var slideIndexA = 0;
+        borgConsultingShow();
         
-        function showSlides() {
+        function borgConsultingShow() {
           var i;
           var slides = document.getElementsByClassName("borg-consulting-slides");
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          slides[slideIndex-1].style.display = "block";  
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
+          slideIndexA++;
+          if (slideIndexA > slides.length) {slideIndexA = 1}    
+          slides[slideIndexA-1].style.display = "block";  
+          setTimeout(borgConsultingShow, 5000); // Change image every 2 seconds
+        }
+        
+        var slideIndexB = 0;
+        placeholderShow();
+        
+        function placeholderShow() {
+          var i;
+          var slides = document.getElementsByClassName("placeholder-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexB++;
+          if (slideIndexB > slides.length) {slideIndexB = 1}    
+          slides[slideIndexB-1].style.display = "block";  
+          setTimeout(placeholderShow, 5000); // Change image every 2 seconds
         }
         </script>
 </body>
