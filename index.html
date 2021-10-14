@@ -3,37 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/091fb7e3b0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="nav-bar">
-        <a href="index.html"><img src="img/Maxpfp.jpg"  alt="Max pfp" class="logo"></a>
-        <ul class="nav-lang">
-            <a href="#">English</a>
-            <a href="#">Dutch</a>
-        </ul>
-        <ul class="nav-list">
-            <a href="#aboutme">About me</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#resume">Resume</a>
-        </ul>
-    </header>
-    <main>
-        <div class="aboutme">
-            <a id="aboutme" class="aboutme-anchor">About Me</a>
-            
+    <section class="hero">
+        <header class="nav-bar">
+            <a href="index.html" class="nav-logo-text">TheMaksoo</a>
+            <ul class="nav-list">
+                <a href="#aboutme">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </header>
+        <div class="hero-container">
+            <p class="greeting">Hi, I am</p>
+            <p class="maker">Max van Lierop</p>
+            <p class="job">Software Developer student</p>
+            <p class="description">I specialize in Python and I have the basics of HTML and CSS aswell as PHP, I also work with MySql and Mongdo DB</p>
+            <a href="#experience" class="herobutton">see my work</a>
         </div>
+    </section>
+     <main>
+        <section class="about">
+            <div class="aboutme">
+                <div class="aboutme-container">
+                    <a id="aboutme" class="aboutme-anchor">About Me</a>
+                    <p>I'm a Software Developer student since 2021 and started coding in 2018. I'm a self-taught programmer. I have a passion for discord.py, HTML and CSS. I love what I'm doing, after school I continue coding on my own projects!Once I start a Interesting project I'm highly motivated and want to make it as best as possible.</p>
+                    <p><br>What I use.</p>
+                    <ul class="using">
+                        <li><i class="fab fa-python"></i><span>Python</span></li>
+                        <li><i class="fa fa-html5"></i><span>HTML</span></li>
+                        <li><i class="fa fa-css3"></i><span>CSS</span></li>
+                        <li><i class="fab fa-php"></i><span>PHP</span></li>
+                        <li><i class="fa fa-server"></i><span>Xampp</span></li>            
+                        <li><i class="fa fa-code"></i><span>Visual Studio</span></li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
         <div class="projects">
             <a id="projects" class="projects-anchor">Projects</a>
+            <ul>
+                <li>
+                    <div class="slideshow-container">
+                        <div class="borg-consulting-slides fade">
+                            <img src="img/borg-consulting1.jpg" style="width:100px; height: 100px;">
+                        </div>
+
+                        <div class="borg-consulting-slides fade">
+                            <img src="img/borg-consulting2.jpg" style="width:100px; height: 100px;">
+                        </div>
+                    </div>
+                    <p><i class="fab fa-github"></i><i class="fa fa-link"></i>Borg Consulting</p>
+                </li>
+            </ul>
         </div>
         <div class="experience">
             <a id="experience" class="experience-anchor">Experience</a>
         </div>
-        <div class="resume">
-            <a id="resume" class="resume-anchor">Resume</a>
+        <div class="contact">
+            <a id="contact" class="contact-anchor">Contact</a>
         </div>
     </main>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("borg-consulting-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
 </body>
 </html>

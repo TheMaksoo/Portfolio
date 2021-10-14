@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+}
+
+
+.borg-consulting-slides {display: none;}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Nav */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    height: 100px;
+    margin: 0 5%;
+
+}
+
+.nav-logo-text{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Grand Hotel';
+    font-style: italic;
+    color: white;
+}
+
+.nav-logo-text:hover {
+    color: #02d463;
+    transition: 0.2s ease;
+}
+
+.nav-list a{
+    margin-right: 20px;
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    font-family: "JetBrains Mono";
+}
+.nav-list a:hover{
+    color: #02d463;
+    transition: 0.2s ease;
+}
+
+/* Hero */
+.hero {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: fit-content;
+    
+}
+
+.hero-container{
+    justify-content: flex-start;
+    position: relative;
+    width: 25%;
+    margin-top: 100px;
+    margin-left: 15%;
+}
+
+.greeting{
+    display: block;
+    color: rgb(2, 212, 99) !important;
+}
+
+.maker{
+    font-size: 64px;
+    text-shadow: black 0px 0px 10px;
+    font-family: "JetBrains Mono";
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.job{ 
+    font-size: 36px;
+    text-shadow: black 0px 0px 10px;
+    font-family: "JetBrains Mono";
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: rgb(192, 190, 190);
+}
+
+.description{
+    width: 80%;
+    margin: 50px 0;
+    color: #bdbdbd;
+    text-align: left;
+}
+
+.colored {
+    text-shadow: 0px 0px 10px black;
+}
+
+
+/* main body and slider */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: transparent;
+    font-family: 'JetBrains Mono';
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+body::-webkit-scrollbar-thumb {
+    background: #333;
+    outline: 1px solid white;
+    border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #02D463;
+}
+
+/* about me */
+
+.about {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0px;
+    background: rgb(26, 26, 26);
+}
+
+.aboutme{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    max-width: 1400px;
+    padding-left: 4%;
+    flex-direction: column;
+}
+
+.aboutme-container{
+    width: 50%;
+}
+
+.aboutme-anchor{ 
+    color:white;
+    font-size: 36px;
+    font-family: "JetBrains Mono";
+    font-weight: bold;
+}
+
+.aboutme-container p{
+    width: 80%;
+    margin-top: 50px;
+    color: rgb(189, 189, 189);
+    text-align: left;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "JetBrains Mono";
+}
+.using{
+    list-style: none;
+    margin: 25px 0px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.using span{
+    font-size: 14px;
+    color: rgb(189, 189, 189);
+    font-family: "JetBrains Mono";
+    margin: 25px 0px 0px
+}
+
+.using i{
+    margin-right: 15px;
+    color: rgb(2, 212, 99);
+    width: 15px;
+    height: 15px;
+}
