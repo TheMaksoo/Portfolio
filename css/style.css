@@ -4,6 +4,11 @@
 
 
 .borg-consulting-slides {display: none;}
+.solyx-slides-slides {display: none;}
+.rio-website-slides {display: none;}
+.myportfolio-slides {display: none;}
+.microbit-slides {display: none;}
+.earningsandexpenses-slides {display: none;}
 .placeholder-slides {display: none;}
 
 /* Fading animation */
@@ -244,6 +249,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .projects-anchor{
+    text-decoration: none;
     font-size: 36px;
     font-family: "JetBrains Mono";
     text-shadow: black 0px 0px 10px;
@@ -253,6 +259,9 @@ body::-webkit-scrollbar-thumb:hover {
     margin-inline-end: 0px;
     font-weight: bold;
     color:white;
+}
+.projects-anchor ul{
+    text-decoration: none;
 }
 
 .projects ul{
@@ -264,6 +273,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .project-links{
+    text-decoration: none;
     display: flex;
     -webkit-box-pack: justify;
     -webkit-box-align: center;
@@ -275,9 +285,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .project-links i{
     margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(189, 189, 189);;
 }
 
 .project-links p{
     margin-left: auto;
     margin-right: 0px;
+    font-size: 14px;
+    text-shadow: black 0px 0px 10px;
 }

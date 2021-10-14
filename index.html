@@ -72,6 +72,86 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
+                            <div class="solyx-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="solyx-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Solyx bot.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="rio-website-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="rio-website-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Website for Rio.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="myportfolio-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="myportfolio-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>My portfolio</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="microbit-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="microbit-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Micro:bit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="earningsandexpenses-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+
+                            <div class="earningsandexpenses-slides fade">
+                                <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Earnings and Expenses.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
                             <div class="placeholder-slides fade">
                                 <img src="img/placeholder.jpg" style="width:285px; height: 160px;">
                             </div>
@@ -85,7 +165,6 @@
                                 <p>Lorem, ipsum.</p>
                             </div>
                         </div>
-                       
                     </li>
                 </ul>
             </div>
@@ -113,7 +192,76 @@
           slides[slideIndexA-1].style.display = "block";  
           setTimeout(borgConsultingShow, 5000); // Change image every 2 seconds
         }
+        var slideIndexB = 0;
+        solyxShow();
         
+        function solyxShow() {
+          var i;
+          var slides = document.getElementsByClassName("solyx--slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexB++;
+          if (slideIndexB > slides.length) {slideIndexB = 1}    
+          slides[slideIndexB-1].style.display = "block";  
+          setTimeout(solyxShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexC = 0;
+        rioWebsiteShow();
+        
+        function rioWebsiteShow() {
+          var i;
+          var slides = document.getElementsByClassName("rio-website-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexC++;
+          if (slideIndexC > slides.length) {slideIndexC = 1}    
+          slides[slideIndexC-1].style.display = "block";  
+          setTimeout(rioWebsiteShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexD = 0;
+        myportfolioShow();
+        
+        function myportfolioShow() {
+          var i;
+          var slides = document.getElementsByClassName("myportfolio-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexD++;
+          if (slideIndexD > slides.length) {slideIndexD = 1}    
+          slides[slideIndexD-1].style.display = "block";  
+          setTimeout(myportfolioShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexE = 0;
+        microbitShow();
+        
+        function microbitShow() {
+          var i;
+          var slides = document.getElementsByClassName("microbit-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexE++;
+          if (slideIndexE > slides.length) {slideIndexE = 1}    
+          slides[slideIndexE-1].style.display = "block";  
+          setTimeout(microbitShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexF = 0;
+        earningsandexpensesShow();
+        
+        function earningsandexpensesShow() {
+          var i;
+          var slides = document.getElementsByClassName("earningsandexpenses-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexF++;
+          if (slideIndexF > slides.length) {slideIndexF = 1}    
+          slides[slideIndexF-1].style.display = "block";  
+          setTimeout(earningsandexpensesShow, 5000); // Change image every 2 seconds
+        }
         var slideIndexB = 0;
         placeholderShow();
         
