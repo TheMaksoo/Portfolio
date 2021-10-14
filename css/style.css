@@ -254,6 +254,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: bold;
     color:white;
 }
+
 .projects ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,11 +266,18 @@ body::-webkit-scrollbar-thumb:hover {
 .project-links{
     display: flex;
     -webkit-box-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     padding-top: 10px;
     font-family: "JetBrains Mono";
     color: rgb(189, 189, 189);
     max-width: 285px;
+}
+.project-links i{
+    margin-right: 10px;
+}
+
+.project-links p{
+    margin-left: auto;
+    margin-right: 0px;
 }
