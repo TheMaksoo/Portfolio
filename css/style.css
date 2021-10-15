@@ -72,7 +72,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: fit-content;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     
 }
 
@@ -270,6 +270,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 40px;
     font-weight: bold;
     color:white;
+    text-align:center;
 }
 .projects-anchor ul{
     text-decoration: none;
@@ -315,6 +316,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-shadow: black 0px 0px 10px;
     color:white;
     text-decoration: none;
+    text-align:center;
 }
 
 .no-web-project i{
@@ -326,10 +328,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
+@media only screen and (max-width: 780px) {
+
+    .projects ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px 30px;
+        width: 100%;
+        text-decoration: none;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
+
     .projects ul{
         display: flex;
-        grid-template-columns: repeat(3, 1fr);
         gap: 80px 60px;
         width: 100%;
         text-decoration: none;
