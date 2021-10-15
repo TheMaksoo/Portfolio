@@ -295,3 +295,18 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 14px;
     text-shadow: black 0px 0px 10px;
 }
+
+
+/* contact */
+
+.contact-section{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(17, 17, 17);
+    padding: 100px 0px;
+    font-family: "JetBrains Mono";
+    color: white;
+}

@@ -18,7 +18,6 @@
             <ul class="nav-list">
                 <a href="#aboutme">About me</a>
                 <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
             </ul>
         </header>
@@ -65,7 +64,7 @@
                             <div class="project-links">
                                 <a href="https://github.com/Moheax/borg-consulting"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fa fa-link"></i></a>
-                                <p>Borg Consulting</p>
+                                <p>Borg Consulting.</p>
                             </div>
                         </div>
                         
@@ -114,7 +113,7 @@
                             <div class="project-links">
                                 <a href="https://github.com/Moheax/school"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fa fa-link"></i></a>
-                                <p>My portfolio</p>
+                                <p>My portfolio.</p>
                             </div>
                         </div>
                     </li>
@@ -150,32 +149,14 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="slideshow-container">
-                            <div class="placeholder-slides fade">
-                                <img src="img/placeholder.jpg" style="width:340px; height: 191px;">
-                            </div>
-
-                            <div class="placeholder-slides fade">
-                                <img src="img/placeholder.jpg" style="width:340px; height: 191px;">
-                            </div>
-                            <div class="project-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fa fa-link"></i></a>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </section>
-        <div class="experience">
-            <a id="experience" class="experience-anchor">Experience</a>
-        </div>
-        <div class="contact">
-            <a id="contact" class="contact-anchor">Contact</a>
-        </div>
-        
+        <section class="contact-section">
+            <div class="contact">
+                <a id="contact" class="contact-anchor">Contact</a>
+            </div>
+        </section>
     </main>
     <script>
         var slideIndexA = 0;
@@ -261,20 +242,6 @@
           if (slideIndexF > slides.length) {slideIndexF = 1}    
           slides[slideIndexF-1].style.display = "block";  
           setTimeout(earningsandexpensesShow, 5000); // Change image every 2 seconds
-        }
-        var slideIndexG = 0;
-        placeholderShow();
-        
-        function placeholderShow() {
-          var i;
-          var slides = document.getElementsByClassName("placeholder-slides");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndexG++;
-          if (slideIndexG > slides.length) {slideIndexG = 1}    
-          slides[slideIndexG-1].style.display = "block";  
-          setTimeout(placeholderShow, 5000); // Change image every 2 seconds
         }
         </script>
 </body>
