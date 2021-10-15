@@ -26,7 +26,7 @@
             <p class="maker">Max van Lierop</p>
             <p class="job">Software Developer student</p>
             <p class="description">I specialize in Python and I have the basics of HTML and CSS aswell as PHP, I also work with MySql and Mongdo DB</p>
-            <a href="#experience" class="herobutton">see my work</a>
+            <a href="#experience" class="button">see my work</a>
         </div>
     </section>
      <main>
@@ -152,9 +152,27 @@
                 </ul>
             </div>
         </section>
+        
         <section class="contact-section">
             <div class="contact">
-                <a id="contact" class="contact-anchor">Contact</a>
+                <form method="POST" class="contact-wrapper" id="contact-form">
+                    <a id="contact" class="contact-anchor">Contact me.</a>
+                    <div class="input-grid">
+                        <div class="contact-name">
+                            <p>Name</p>
+                            <input class="name-input" type="name" name="name">
+                        </div>   
+                        <div class="contact-email">
+                            <p>Email</p>
+                            <input class="email-input" type="email" name="email">
+                        </div> 
+                    </div>
+                    <div class="contact-message">
+                        <p>Message</p>
+                        <input class="message-input" type="message" name="message">
+                    </div>
+                    <Input aria-label="Submit" type="submit" value="Submit" class="button"/>
+                </form>
             </div>
         </section>
     </main>
