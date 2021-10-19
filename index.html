@@ -166,7 +166,7 @@
         
         <section class="contact-section">
             <div class="contact">
-                <form method="POST" class="contact-wrapper" id="contact-form">
+                <form action="contact_mail.php" method="POST" class="contact-wrapper" id="contact-form">
                     <a id="contact" class="contact-anchor">Contact Me.</a> 
                     <a id="contact" class="contact-anchor">Under Contruction...</a>
 
@@ -182,9 +182,9 @@
                     </div>
                     <div class="contact-message">
                         <p>Message</p>
-                        <input class="message-input" type="message" name="message">
+                        <textarea rows="5" class="message-input" name="message" cols="30"></textarea>
                     </div>
-                    <Input aria-label="Submit" type="submit" value="Submit" class="button"/>
+                    <Input type="submit" name="submit" value="Submit" class="button"/>
                 </form>
             </div>
         </section>
