@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
     <title>Portfolio</title>
 </head>
 <body>
@@ -84,6 +85,22 @@
                                 <a href="https://github.com/Moheax/Solyx"><i class="fab fa-github"></i></a>
                                 <a href="https://solyxbot.webflow.io/"><i class="fa fa-link"></i></a>
                                 <p>Solyx bot.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slideshow-container">
+                            <div class="company-website-slides fade">
+                                <img src="img/company1.jpg" style="width:340px; height: 191px;">
+                            </div>
+
+                            <div class="company-website-slides fade">
+                                <img src="img/company2.jpg" style="width:340px; height: 191px;">
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/TheMaksoo/KLANT-WEBSITE-OPDRACHT-1"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fa fa-link"></i></a>
+                                <p>Company Website School.</p>
                             </div>
                         </div>
                     </li>
@@ -273,6 +290,17 @@
           if (slideIndexF > slides.length) {slideIndexF = 1}    
           slides[slideIndexF-1].style.display = "block";  
           setTimeout(earningsandexpensesShow, 5000); // Change image every 2 seconds
+        }
+        function companySchoolShow() {
+          var i;
+          var slides = document.getElementsByClassName("company-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexG++;
+          if (slideIndexG > slides.length) {slideIndexG = 1}    
+          slides[slideIndexG-1].style.display = "block";  
+          setTimeout(companySchoolShow, 5000); // Change image every 2 seconds
         }
         </script>
 </body>
