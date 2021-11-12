@@ -3,14 +3,7 @@
 }
 
 
-.borg-consulting-slides {display: none;}
-.solyx-slides {display: none;}
-.rio-website-slides {display: none;}
-.myportfolio-slides {display: none;}
-.microbit-slides {display: none;}
-.earningsandexpenses-slides {display: none;}
-.placeholder-slides {display: none;}
-.solyx-web-rewrite-slides {display: none;}
+.web-slides {display: none;}
 
 /* Fading animation */
 .fade {
