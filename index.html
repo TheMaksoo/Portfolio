@@ -57,11 +57,11 @@
                 <ul>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="borg-consulting-slides fade">
                                 <img src="img/borg-consulting1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="borg-consulting-slides fade">
                                 <img src="img/borg-consulting2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -74,11 +74,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="solyx-slides fade">
                                 <img src="img/solyx1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="solyx-slides fade">
                                 <img src="img/solyx2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -90,11 +90,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="solyx-web-rewrite-slides fade">
                                 <img src="img/solyxrewrite1.png" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="solyx-web-rewrite-slides fade">
                                 <img src="img/solyxrewrite2.png" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -106,11 +106,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="rio-website-slides fade">
                                 <img src="img/websiterio1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="rio-website-slides fade">
                                 <img src="img/websiterio2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -122,11 +122,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="myportfolio-slides fade">
                                 <img src="img/myportfolio1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="myportfolio-slides fade">
                                 <img src="img/myportfolio2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -138,11 +138,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="microbit-slides fade">
                                 <img src="img/microbit1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="microbit-slides fade">
                                 <img src="img/microbit2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -154,11 +154,11 @@
                     </li>
                     <li>
                         <div class="slideshow-container">
-                            <div class="web-slides fade">
+                            <div class="earningsandexpenses-slides fade">
                                 <img src="img/earningsandexpenses1.jpg" style="width:340px; height: 191px;">
                             </div>
 
-                            <div class="web-slides fade">
+                            <div class="earningsandexpenses-slides fade">
                                 <img src="img/earningsandexpenses2.jpg" style="width:340px; height: 191px;">
                             </div>
                             <div class="project-links">
@@ -207,19 +207,103 @@
         </section>
     </main>
     <script>
-        var slideIndex= 0;
-        slideShow();
+        var slideIndexA = 0;
+        borgConsultingShow();
         
-        function slideShow() {
+        function borgConsultingShow() {
           var i;
-          var slides = document.getElementsByClassName("web-slides");
+          var slides = document.getElementsByClassName("borg-consulting-slides");
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          slides[slideIndex-1].style.display = "block";  
-          setTimeout(slideShow, 5000); // Change image every 2 seconds
+          slideIndexA++;
+          if (slideIndexA > slides.length) {slideIndexA = 1}    
+          slides[slideIndexA-1].style.display = "block";  
+          setTimeout(borgConsultingShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexB = 0;
+        solyxShow();
+        
+        function solyxShow() {
+          var i;
+          var slides = document.getElementsByClassName("solyx-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexB++;
+          if (slideIndexB > slides.length) {slideIndexB = 1}    
+          slides[slideIndexB-1].style.display = "block";  
+          setTimeout(solyxShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexC = 0;
+        rioWebsiteShow();
+        
+        function rioWebsiteShow() {
+          var i;
+          var slides = document.getElementsByClassName("rio-website-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexC++;
+          if (slideIndexC > slides.length) {slideIndexC = 1}    
+          slides[slideIndexC-1].style.display = "block";  
+          setTimeout(rioWebsiteShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexD = 0;
+        myportfolioShow();
+        
+        function myportfolioShow() {
+          var i;
+          var slides = document.getElementsByClassName("myportfolio-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexD++;
+          if (slideIndexD > slides.length) {slideIndexD = 1}    
+          slides[slideIndexD-1].style.display = "block";  
+          setTimeout(myportfolioShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexE = 0;
+        microbitShow();
+        
+        function microbitShow() {
+          var i;
+          var slides = document.getElementsByClassName("microbit-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexE++;
+          if (slideIndexE > slides.length) {slideIndexE = 1}    
+          slides[slideIndexE-1].style.display = "block";  
+          setTimeout(microbitShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexF = 0;
+        earningsandexpensesShow();
+        
+        function earningsandexpensesShow() {
+          var i;
+          var slides = document.getElementsByClassName("earningsandexpenses-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexF++;
+          if (slideIndexF > slides.length) {slideIndexF = 1}    
+          slides[slideIndexF-1].style.display = "block";  
+          setTimeout(earningsandexpensesShow, 5000); // Change image every 2 seconds
+        }
+        var slideIndexG = 0;
+        solyxWebRewriteShow();
+
+        function solyxWebRewriteShow() {
+          var i;
+          var slides = document.getElementsByClassName("solyx-web-rewrite-slides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndexG++;
+          if (slideIndexG > slides.length) {slideIndexG = 1}    
+          slides[slideIndexG-1].style.display = "block";  
+          setTimeout(companySchoolShow, 5000); // Change image every 2 seconds
         }
         </script>
 </body>
