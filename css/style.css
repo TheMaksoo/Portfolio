@@ -9,8 +9,19 @@
 .myportfolio-slides {display: none;}
 .microbit-slides {display: none;}
 .earningsandexpenses-slides {display: none;}
-.placeholder-slides {display: none;}
 .solyx-web-rewrite-slides {display: none;}
+.flexdieren-slides {display: none;}
+.curiowebsite-slides {display: none;}
+.A5-slides {display: none;}
+.toolshed-slides {display: none;}
+.h3recept-slides {display: none;}
+.klassenlijst-slides {display: none;}
+.scouting-slides {display: none;}
+.scoutingshop-slides {display: none;}
+.storingapp-slides {display: none;}
+.placeholder-slides {display: none;}
+
+
 
 /* Fading animation */
 .fade {
@@ -318,6 +329,7 @@ body::-webkit-scrollbar-thumb:hover {
     color:white;
     text-decoration: none;
     text-align:center;
+    max-width: 60%;
 }
 
 .no-web-project i{
@@ -326,6 +338,7 @@ body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
     text-decoration: none;
     color: rgb(189, 189, 189);
+    
 
 }
 
